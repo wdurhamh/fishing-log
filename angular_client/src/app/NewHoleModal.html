@@ -1,0 +1,23 @@
+<div (click)="onContainerClicked($event)" class="modal fade" tabindex="-1" [ngClass]="{'show': visibleAnimate}"
+       [ngStyle]="{'display': visible ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}">
+	<div class="modal-header">
+		<button type="button" class="close" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+		</button>
+		<h4 class="modal-title" id="myModalLabel">New Hole</h4>
+	</div>
+	<div  class="modal-body">
+	    <form id="new-hole-form">
+			<div class="form-group">
+				<label for="hole-name">Name</label>
+				<input id="input-hole-name" type="text" class="form-control input-lg" [(ngModel)]="_hole.name" name="hole-name">
+			</div>
+		</form>
+		<textarea name="comment" form="new-hole-form" [(ngModel)]="_hole.comment"></textarea>
+	</div>
+	<div class='row' id="new-hole-error-message">{{_error_msg}}</div><div>{{__myID}}</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="cancel()">Close</button>
+		<button type="button" class="btn btn-primary" (click)="createBOW()">Save Hole</button>
+	</div>
+</div>
