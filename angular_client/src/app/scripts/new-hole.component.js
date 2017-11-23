@@ -27,7 +27,7 @@ var NewHoleComponent = NewHoleComponent_1 = (function () {
         this._hole = new hole_1.Hole();
         this.visible = true;
         this.visibleAnimate = true;
-        setTimeout(function () { return _this.__visibleAnimate = true; }, 100);
+        setTimeout(function () { return _this.visibleAnimate = true; }, 100);
         this.__changeDetctRef.detectChanges();
     };
     NewHoleComponent.prototype.hideModal = function () {
@@ -54,7 +54,7 @@ NewHoleComponent.debug_id = 0;
 NewHoleComponent = NewHoleComponent_1 = __decorate([
     core_1.Component({
         selector: 'new-hole',
-        templateUrl: './NewHoleModal.html'
+        templateUrl: './../views/NewHoleModal.html'
     }),
     __metadata("design:paramtypes", [core_1.ChangeDetectorRef])
 ], NewHoleComponent);

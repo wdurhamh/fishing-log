@@ -14,7 +14,7 @@ var MainMenuComponent = (function () {
 MainMenuComponent = __decorate([
     core_1.Component({
         selector: 'main-menu',
-        templateUrl: './MainMenu.html'
+        templateUrl: './../views/MainMenu.html'
     })
 ], MainMenuComponent);
 exports.MainMenuComponent = MainMenuComponent;

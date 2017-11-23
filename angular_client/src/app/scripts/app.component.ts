@@ -7,7 +7,7 @@ declare var google: any;//reference google from html page, where it will be incl
 
 @Component({
   selector: 'the-map',
-  templateUrl: './AppComponent.html'
+  templateUrl: './../views/AppComponent.html'
 })
 export class AppComponent implements OnInit, AfterViewInit  { name = 'Angular';
 	@ViewChild(NewHoleComponent) new_hole_component:NewHoleComponent; 

@@ -6,7 +6,7 @@ import { Hole, LatLng } from './hole';
 
 @Component({
 	selector:'new-hole',
-	templateUrl: './NewHoleModal.html'
+	templateUrl: './../views/NewHoleModal.html'
 })
 export class NewHoleComponent{
 	static debug_id:number = 0;

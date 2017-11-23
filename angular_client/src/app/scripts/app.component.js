@@ -40,7 +40,7 @@ __decorate([
 AppComponent = __decorate([
     core_1.Component({
         selector: 'the-map',
-        templateUrl: './AppComponent.html'
+        templateUrl: './../views/AppComponent.html'
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
